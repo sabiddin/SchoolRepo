@@ -43,8 +43,10 @@
   <ItemGroup>
     <Compile Include="Implementations\CourseDataAccess.cs" />
     <Compile Include="Implementations\DepartmentDataAccess.cs" />
+    <Compile Include="Implementations\ProfessorDataAccess.cs" />
     <Compile Include="Interfaces\IDepartmentDataAccess.cs" />
     <Compile Include="Interfaces\ICourseDataAccess.cs" />
+    <Compile Include="Interfaces\IProfessorDataAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
