@@ -14,6 +14,7 @@ namespace School.WinForm.ViewModels.Implementations
     {
         private ICourseBusiness _courseBusiness;
         private IDepartmentBusiness _departmentBusiness;
+       
         public CourseViewModel(ICourseBusiness courseBusiness,IDepartmentBusiness departmentBusiness)
         {
             _courseBusiness = courseBusiness;
