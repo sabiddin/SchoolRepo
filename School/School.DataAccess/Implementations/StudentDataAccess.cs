@@ -10,7 +10,7 @@ using School.DataAccess.Interfaces;
 
 namespace School.DataAccess.Implementations
 {
-    public class ProfessorDataAccess : IProfessorDataAccess
+    public class StudentDataAccess : IStudentDataAccess
     {
         public string SchoolConnetion
         {
@@ -19,16 +19,16 @@ namespace School.DataAccess.Implementations
                 return ConfigurationManager.ConnectionStrings["SchoolConnection"].ToString();
             }
         }
-        public DataTable GetProfessorByLastName(string LastName)
+        public DataTable GetStudentByLastName(string LastName)
         {
-            string sp = "sp_tblProfessor_GetByLastName";
+            string sp = "sp_tblStudent_GetByLastName";
             DataTable dataTable = new DataTable();
             using (SqlConnection connection = new SqlConnection(SchoolConnetion))
             using (SqlCommand command = new SqlCommand(sp, connection))
             using (SqlDataAdapter dataAdapter = new SqlDataAdapter(command))
             {
                 command.CommandType = CommandType.StoredProcedure;
-                command.Parameters.AddWithValue("@ProfLastName", LastName);
+                command.Parameters.AddWithValue("@StudLastName", LastName);
                 try
                 {
                     dataAdapter.Fill(dataTable);
@@ -45,15 +45,15 @@ namespace School.DataAccess.Implementations
             return dataTable;
         }
 
-        public DataTable GetProfessors()
+        public DataTable GetSudents()
         {
-            string sp = "sp_tblProfessor_Get";
+            string sp = "sp_tblStudent_Get";
             DataTable dataTable = new DataTable();
             using (SqlConnection connection = new SqlConnection(SchoolConnetion))
             using (SqlCommand command = new SqlCommand(sp, connection))
             using (SqlDataAdapter dataAdapter = new SqlDataAdapter(command))
             {
-                command.CommandType = CommandType.StoredProcedure;
+                command.CommandType = CommandType.StoredProcedure;                
                 try
                 {
                     dataAdapter.Fill(dataTable);

@@ -7,9 +7,9 @@ using System.Data;
 
 namespace School.DataAccess.Interfaces
 {
-    public interface IProfessorDataAccess
+    public interface IStudentDataAccess
     {
-        DataTable GetProfessors();
-        DataTable GetProfessorByLastName(string LastName);
+        DataTable GetSudents();
+        DataTable GetStudentByLastName(string LastName);
     }
 }

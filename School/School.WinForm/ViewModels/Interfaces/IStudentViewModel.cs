@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace School.WinForm.ViewModels.Interfaces
 {
-    public interface IProfessorViewModel
+    public interface IStudentViewModel
     {
-        List<Professor> GetProfessors();
-        List<Professor> GetProfessorsByLastName(string LastName);
+        List<Student> GetStudents();
+        List<Student> GetStudentsByLastName(string LastName);
     }
 }

@@ -29,15 +29,19 @@
         private void InitializeComponent()
         {
             this.tabIndex = new System.Windows.Forms.TabControl();
-            this.tabDepartments = new System.Windows.Forms.TabPage();
-            this.tabCourses = new System.Windows.Forms.TabPage();
+            this.pageDepartments = new System.Windows.Forms.TabPage();
+            this.pageCourses = new System.Windows.Forms.TabPage();
+            this.pageStudents = new System.Windows.Forms.TabPage();
+            this.pageProfessors = new System.Windows.Forms.TabPage();
             this.tabIndex.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabIndex
             // 
-            this.tabIndex.Controls.Add(this.tabDepartments);
-            this.tabIndex.Controls.Add(this.tabCourses);
+            this.tabIndex.Controls.Add(this.pageDepartments);
+            this.tabIndex.Controls.Add(this.pageCourses);
+            this.tabIndex.Controls.Add(this.pageStudents);
+            this.tabIndex.Controls.Add(this.pageProfessors);
             this.tabIndex.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabIndex.Location = new System.Drawing.Point(0, 0);
             this.tabIndex.Name = "tabIndex";
@@ -45,25 +49,44 @@
             this.tabIndex.Size = new System.Drawing.Size(970, 593);
             this.tabIndex.TabIndex = 0;
             // 
-            // tabDepartments
+            // pageDepartments
             // 
-            this.tabDepartments.Location = new System.Drawing.Point(4, 25);
-            this.tabDepartments.Name = "tabDepartments";
-            this.tabDepartments.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDepartments.Size = new System.Drawing.Size(962, 564);
-            this.tabDepartments.TabIndex = 0;
-            this.tabDepartments.Text = "Departments";
-            this.tabDepartments.UseVisualStyleBackColor = true;
+            this.pageDepartments.Location = new System.Drawing.Point(4, 25);
+            this.pageDepartments.Name = "pageDepartments";
+            this.pageDepartments.Padding = new System.Windows.Forms.Padding(3);
+            this.pageDepartments.Size = new System.Drawing.Size(962, 564);
+            this.pageDepartments.TabIndex = 0;
+            this.pageDepartments.Text = "Departments";
+            this.pageDepartments.UseVisualStyleBackColor = true;
             // 
-            // tabCourses
+            // pageCourses
             // 
-            this.tabCourses.Location = new System.Drawing.Point(4, 25);
-            this.tabCourses.Name = "tabCourses";
-            this.tabCourses.Padding = new System.Windows.Forms.Padding(3);
-            this.tabCourses.Size = new System.Drawing.Size(192, 71);
-            this.tabCourses.TabIndex = 1;
-            this.tabCourses.Text = "Courses";
-            this.tabCourses.UseVisualStyleBackColor = true;
+            this.pageCourses.Location = new System.Drawing.Point(4, 25);
+            this.pageCourses.Name = "pageCourses";
+            this.pageCourses.Padding = new System.Windows.Forms.Padding(3);
+            this.pageCourses.Size = new System.Drawing.Size(962, 564);
+            this.pageCourses.TabIndex = 1;
+            this.pageCourses.Text = "Courses";
+            this.pageCourses.UseVisualStyleBackColor = true;
+            // 
+            // pageStudents
+            // 
+            this.pageStudents.Location = new System.Drawing.Point(4, 25);
+            this.pageStudents.Name = "pageStudents";
+            this.pageStudents.Padding = new System.Windows.Forms.Padding(3);
+            this.pageStudents.Size = new System.Drawing.Size(962, 564);
+            this.pageStudents.TabIndex = 2;
+            this.pageStudents.Text = "Students";
+            this.pageStudents.UseVisualStyleBackColor = true;
+            // 
+            // pageProfessors
+            // 
+            this.pageProfessors.Location = new System.Drawing.Point(4, 25);
+            this.pageProfessors.Name = "pageProfessors";
+            this.pageProfessors.Size = new System.Drawing.Size(962, 564);
+            this.pageProfessors.TabIndex = 3;
+            this.pageProfessors.Text = "Professors";
+            this.pageProfessors.UseVisualStyleBackColor = true;
             // 
             // Index
             // 
@@ -72,7 +95,7 @@
             this.ClientSize = new System.Drawing.Size(970, 593);
             this.Controls.Add(this.tabIndex);
             this.Name = "Index";
-            this.Text = "Index";            
+            this.Text = "Index";
             this.tabIndex.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -81,7 +104,9 @@
         #endregion
 
         private System.Windows.Forms.TabControl tabIndex;
-        private System.Windows.Forms.TabPage tabDepartments;
-        private System.Windows.Forms.TabPage tabCourses;
+        private System.Windows.Forms.TabPage pageDepartments;
+        private System.Windows.Forms.TabPage pageCourses;
+        private System.Windows.Forms.TabPage pageStudents;
+        private System.Windows.Forms.TabPage pageProfessors;
     }
 }

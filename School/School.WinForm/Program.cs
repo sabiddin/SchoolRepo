@@ -20,7 +20,9 @@ namespace School.WinForm
             var container = Container.For<SchoolRegistry>();
             var courseViewModel = container.GetInstance<ICourseViewModel>();
             var departmentViewModel = container.GetInstance<IDepartmentViewModel>();
-            Application.Run(new Index(departmentViewModel,courseViewModel));
+            var studentsViewModel = container.GetInstance<IStudentViewModel>();
+            var professorViewModel = container.GetInstance<IProfessorViewModel>();
+            Application.Run(new Index(departmentViewModel,courseViewModel, professorViewModel, studentsViewModel));
         }       
     }
    

@@ -21,15 +21,25 @@ namespace School.WinForm
         {
             Scan(scan =>
             {
-                scan.TheCallingAssembly();
-                scan.WithDefaultConventions();
+                scan.TheCallingAssembly();                
+                scan.WithDefaultConventions();               
             });
+
             For<ICourseViewModel>().Use<CourseViewModel>();
             For<IDepartmentViewModel>().Use<DepartmentViewModel>();
+            For<IProfessorViewModel>().Use<ProfessorViewModel>();
+            For<IStudentViewModel>().Use<StudentViewModel>();
+            //Business
             For<ICourseBusiness>().Use<CourseBusiness>();
-            For<ICourseDataAccess>().Use<CourseDataAccess>();
             For<IDepartmentBusiness>().Use<DepartmentBusiness>();
+            For<IStudentBusiness>().Use<StudentBusiness>();
+            For<IProfessorBusinesss>().Use<ProfessorBusiness>();
+            //Data Acccess
+            For<ICourseDataAccess>().Use<CourseDataAccess>();           
             For<IDepartmentDataAccess>().Use<DepartmentDataAccess>();
+            For<IProfessorDataAccess>().Use<ProfessorDataAccess>();
+            For<IStudentDataAccess>().Use<StudentDataAccess>();
+
 
         }
     }

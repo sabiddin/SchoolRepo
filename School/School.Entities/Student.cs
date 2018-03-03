@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace School.Entities
 {
-    public class Professor
-    {        
+    public class Student
+    {
         public int ID { get; set; }
-        public string ProfFirstName { get; set; }
-        public string ProfLastName { get; set; }
-        public string ProfMiddleName { get; set; }
+        public string StudFirstName { get; set; }
+        public string StudLastName { get; set; }
+        public string StudMiddleName { get; set; }
         public Department Department { get; set; }
-        public Professor()
+        public Student()
         {
             Department = new Department();
         }

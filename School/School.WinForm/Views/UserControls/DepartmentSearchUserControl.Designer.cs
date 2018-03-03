@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.pnlSearchDepartments = new System.Windows.Forms.Panel();
-            this.lblDepartmentName = new System.Windows.Forms.Label();
-            this.txtDepartmentName = new System.Windows.Forms.TextBox();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.txtDepartmentName = new System.Windows.Forms.TextBox();
+            this.lblDepartmentName = new System.Windows.Forms.Label();
             this.pnlDepartmentsGrid = new System.Windows.Forms.Panel();
             this.dgvDepartments = new System.Windows.Forms.DataGridView();
             this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,8 +54,39 @@
             this.pnlSearchDepartments.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlSearchDepartments.Location = new System.Drawing.Point(0, 0);
             this.pnlSearchDepartments.Name = "pnlSearchDepartments";
-            this.pnlSearchDepartments.Size = new System.Drawing.Size(1035, 24);
+            this.pnlSearchDepartments.Size = new System.Drawing.Size(970, 23);
             this.pnlSearchDepartments.TabIndex = 0;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnAdd.Location = new System.Drawing.Point(433, 0);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.TabIndex = 3;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnSearch.Location = new System.Drawing.Point(358, 0);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 2;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // txtDepartmentName
+            // 
+            this.txtDepartmentName.Dock = System.Windows.Forms.DockStyle.Left;
+            this.txtDepartmentName.Location = new System.Drawing.Point(127, 0);
+            this.txtDepartmentName.Name = "txtDepartmentName";
+            this.txtDepartmentName.Size = new System.Drawing.Size(231, 22);
+            this.txtDepartmentName.TabIndex = 1;
+            this.txtDepartmentName.TextChanged += new System.EventHandler(this.txtDepartmentName_TextChanged);
             // 
             // lblDepartmentName
             // 
@@ -67,44 +98,13 @@
             this.lblDepartmentName.TabIndex = 0;
             this.lblDepartmentName.Text = "Department Name:";
             // 
-            // txtDepartmentName
-            // 
-            this.txtDepartmentName.Dock = System.Windows.Forms.DockStyle.Left;
-            this.txtDepartmentName.Location = new System.Drawing.Point(127, 0);
-            this.txtDepartmentName.Name = "txtDepartmentName";
-            this.txtDepartmentName.Size = new System.Drawing.Size(231, 22);
-            this.txtDepartmentName.TabIndex = 1;
-            this.txtDepartmentName.TextChanged += new System.EventHandler(this.txtDepartmentName_TextChanged);
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnSearch.Location = new System.Drawing.Point(358, 0);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 24);
-            this.btnSearch.TabIndex = 2;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnAdd.Location = new System.Drawing.Point(433, 0);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 24);
-            this.btnAdd.TabIndex = 3;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
             // pnlDepartmentsGrid
             // 
             this.pnlDepartmentsGrid.Controls.Add(this.dgvDepartments);
             this.pnlDepartmentsGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlDepartmentsGrid.Location = new System.Drawing.Point(0, 24);
+            this.pnlDepartmentsGrid.Location = new System.Drawing.Point(0, 23);
             this.pnlDepartmentsGrid.Name = "pnlDepartmentsGrid";
-            this.pnlDepartmentsGrid.Size = new System.Drawing.Size(1035, 558);
+            this.pnlDepartmentsGrid.Size = new System.Drawing.Size(970, 488);
             this.pnlDepartmentsGrid.TabIndex = 1;
             // 
             // dgvDepartments
@@ -123,7 +123,7 @@
             this.dgvDepartments.Name = "dgvDepartments";
             this.dgvDepartments.ReadOnly = true;
             this.dgvDepartments.RowTemplate.Height = 24;
-            this.dgvDepartments.Size = new System.Drawing.Size(1035, 558);
+            this.dgvDepartments.Size = new System.Drawing.Size(970, 488);
             this.dgvDepartments.TabIndex = 0;
             // 
             // colID
@@ -167,7 +167,7 @@
             this.Controls.Add(this.pnlDepartmentsGrid);
             this.Controls.Add(this.pnlSearchDepartments);
             this.Name = "DepartmentSearchUserControl";
-            this.Size = new System.Drawing.Size(1035, 582);
+            this.Size = new System.Drawing.Size(970, 511);
             this.pnlSearchDepartments.ResumeLayout(false);
             this.pnlSearchDepartments.PerformLayout();
             this.pnlDepartmentsGrid.ResumeLayout(false);

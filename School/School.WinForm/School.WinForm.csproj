@@ -60,9 +60,11 @@
     <Compile Include="ViewModels\Implementations\CourseViewModel.cs" />
     <Compile Include="ViewModels\Implementations\DepartmentViewModel.cs" />
     <Compile Include="ViewModels\Implementations\ProfessorViewModel.cs" />
+    <Compile Include="ViewModels\Implementations\StudentViewModel.cs" />
     <Compile Include="ViewModels\Interfaces\ICourseViewModel.cs" />
     <Compile Include="ViewModels\Interfaces\IDepartmentViewModel.cs" />
     <Compile Include="ViewModels\Interfaces\IProfessorViewModel.cs" />
+    <Compile Include="ViewModels\Interfaces\IStudentViewModel.cs" />
     <Compile Include="Views\CourseViews\CourseCreate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +89,42 @@
     <Compile Include="Views\Index.Designer.cs">
       <DependentUpon>Index.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\ProfessorViews\ProfessorCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProfessorViews\ProfessorCreate.Designer.cs">
+      <DependentUpon>ProfessorCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProfessorViews\ProfessorDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProfessorViews\ProfessorDelete.Designer.cs">
+      <DependentUpon>ProfessorDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProfessorViews\ProfessorUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProfessorViews\ProfessorUpdate.Designer.cs">
+      <DependentUpon>ProfessorUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StudentViews\StudentCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\StudentViews\StudentCreate.Designer.cs">
+      <DependentUpon>StudentCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StudentViews\StudentDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\StudentViews\StudentDelete.Designer.cs">
+      <DependentUpon>StudentDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StudentViews\StudentUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\StudentViews\StudentUpdate.Designer.cs">
+      <DependentUpon>StudentUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserControls\CourseSearchUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -104,6 +142,18 @@
     </Compile>
     <Compile Include="Views\UserControls\DepartmentSearchUserControl.Designer.cs">
       <DependentUpon>DepartmentSearchUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\ProfessorSearchUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UserControls\ProfessorSearchUserControl.Designer.cs">
+      <DependentUpon>ProfessorSearchUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\StudentSearchUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UserControls\StudentSearchUserControl.Designer.cs">
+      <DependentUpon>StudentSearchUserControl.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -134,6 +184,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UserControls\DepartmentSearchUserControl.resx">
       <DependentUpon>DepartmentSearchUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserControls\ProfessorSearchUserControl.resx">
+      <DependentUpon>ProfessorSearchUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserControls\StudentSearchUserControl.resx">
+      <DependentUpon>StudentSearchUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

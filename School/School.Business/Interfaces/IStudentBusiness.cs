@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace School.Business.Interfaces
 {
-    public interface IProfessorBusinesss
+    public interface IStudentBusiness
     {
-        List<Professor> GetProfessors();
-        List<Professor> GetProfessorsByLastName(string LastName);
+        List<Student> GetStudents();
+        List<Student> GetStudentsByLastName(string LastName);
     }
 }

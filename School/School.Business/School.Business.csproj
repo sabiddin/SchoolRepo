@@ -43,9 +43,11 @@
     <Compile Include="Implementations\CourseBusiness.cs" />
     <Compile Include="Implementations\DepartmentBusiness.cs" />
     <Compile Include="Implementations\ProfessorBusiness.cs" />
+    <Compile Include="Implementations\StudentBusiness.cs" />
     <Compile Include="Interfaces\ICourseBusiness.cs" />
     <Compile Include="Interfaces\IDepartmentBusiness.cs" />
     <Compile Include="Interfaces\IProfessorBusinesss.cs" />
+    <Compile Include="Interfaces\IStudentBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

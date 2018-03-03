@@ -57,7 +57,7 @@
             this.pnlSearch.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlSearch.Location = new System.Drawing.Point(0, 0);
             this.pnlSearch.Name = "pnlSearch";
-            this.pnlSearch.Size = new System.Drawing.Size(970, 29);
+            this.pnlSearch.Size = new System.Drawing.Size(970, 23);
             this.pnlSearch.TabIndex = 0;
             // 
             // btnAdd
@@ -65,7 +65,7 @@
             this.btnAdd.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnAdd.Location = new System.Drawing.Point(431, 0);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 29);
+            this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 3;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -76,7 +76,7 @@
             this.btnSearch.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnSearch.Location = new System.Drawing.Point(356, 0);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 29);
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
             this.btnSearch.TabIndex = 2;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -105,9 +105,9 @@
             // 
             this.pnlCourseGrid.Controls.Add(this.dgvCourses);
             this.pnlCourseGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlCourseGrid.Location = new System.Drawing.Point(0, 29);
+            this.pnlCourseGrid.Location = new System.Drawing.Point(0, 23);
             this.pnlCourseGrid.Name = "pnlCourseGrid";
-            this.pnlCourseGrid.Size = new System.Drawing.Size(970, 482);
+            this.pnlCourseGrid.Size = new System.Drawing.Size(970, 488);
             this.pnlCourseGrid.TabIndex = 1;
             // 
             // dgvCourses
@@ -129,7 +129,7 @@
             this.dgvCourses.Name = "dgvCourses";
             this.dgvCourses.ReadOnly = true;
             this.dgvCourses.RowTemplate.Height = 24;
-            this.dgvCourses.Size = new System.Drawing.Size(970, 482);
+            this.dgvCourses.Size = new System.Drawing.Size(970, 488);
             this.dgvCourses.TabIndex = 0;
             this.dgvCourses.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCourses_CellClick);
             // 
