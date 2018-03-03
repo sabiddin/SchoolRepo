@@ -71,7 +71,7 @@ namespace School.WinForm.Views.UserControls
             LoadData();
         }
 
-        private void txtStudLastName_TextChanged(object sender, EventArgs e)
+        private void txtProfLastName_TextChanged(object sender, EventArgs e)
         {
             LoadData();
         }

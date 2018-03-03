@@ -76,6 +76,7 @@
             this.txtProfLastName.Name = "txtProfLastName";
             this.txtProfLastName.Size = new System.Drawing.Size(203, 22);
             this.txtProfLastName.TabIndex = 1;
+            this.txtProfLastName.TextChanged += new System.EventHandler(this.txtProfLastName_TextChanged);
             // 
             // btnSearch
             // 
