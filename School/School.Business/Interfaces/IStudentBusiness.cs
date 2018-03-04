@@ -11,5 +11,8 @@ namespace School.Business.Interfaces
     {
         List<Student> GetStudents();
         List<Student> GetStudentsByLastName(string LastName);
+        bool AddStudent(Student student);
+        bool UpdateStudent(Student student);
+        bool DeleteStudent(int ID);
     }
 }
