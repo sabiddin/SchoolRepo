@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.pnlProfessorsSearch = new System.Windows.Forms.Panel();
-            this.lblProfLastName = new System.Windows.Forms.Label();
-            this.txtProfLastName = new System.Windows.Forms.TextBox();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.txtProfLastName = new System.Windows.Forms.TextBox();
+            this.lblProfLastName = new System.Windows.Forms.Label();
             this.pnlProfessorsGrid = new System.Windows.Forms.Panel();
             this.dgvProfessors = new System.Windows.Forms.DataGridView();
             this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,58 +55,64 @@
             this.pnlProfessorsSearch.Controls.Add(this.lblProfLastName);
             this.pnlProfessorsSearch.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlProfessorsSearch.Location = new System.Drawing.Point(0, 0);
+            this.pnlProfessorsSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlProfessorsSearch.Name = "pnlProfessorsSearch";
-            this.pnlProfessorsSearch.Size = new System.Drawing.Size(970, 23);
+            this.pnlProfessorsSearch.Size = new System.Drawing.Size(728, 19);
             this.pnlProfessorsSearch.TabIndex = 0;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnAdd.Location = new System.Drawing.Point(321, 0);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(56, 19);
+            this.btnAdd.TabIndex = 3;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnSearch.Location = new System.Drawing.Point(265, 0);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(56, 19);
+            this.btnSearch.TabIndex = 2;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // txtProfLastName
+            // 
+            this.txtProfLastName.Dock = System.Windows.Forms.DockStyle.Left;
+            this.txtProfLastName.Location = new System.Drawing.Point(112, 0);
+            this.txtProfLastName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProfLastName.Name = "txtProfLastName";
+            this.txtProfLastName.Size = new System.Drawing.Size(153, 20);
+            this.txtProfLastName.TabIndex = 1;
+            this.txtProfLastName.TextChanged += new System.EventHandler(this.txtProfLastName_TextChanged);
             // 
             // lblProfLastName
             // 
             this.lblProfLastName.AutoSize = true;
             this.lblProfLastName.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblProfLastName.Location = new System.Drawing.Point(0, 0);
+            this.lblProfLastName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblProfLastName.Name = "lblProfLastName";
-            this.lblProfLastName.Size = new System.Drawing.Size(151, 17);
+            this.lblProfLastName.Size = new System.Drawing.Size(112, 13);
             this.lblProfLastName.TabIndex = 0;
             this.lblProfLastName.Text = "Professor\'s Last Name";
-            // 
-            // txtProfLastName
-            // 
-            this.txtProfLastName.Dock = System.Windows.Forms.DockStyle.Left;
-            this.txtProfLastName.Location = new System.Drawing.Point(151, 0);
-            this.txtProfLastName.Name = "txtProfLastName";
-            this.txtProfLastName.Size = new System.Drawing.Size(203, 22);
-            this.txtProfLastName.TabIndex = 1;
-            this.txtProfLastName.TextChanged += new System.EventHandler(this.txtProfLastName_TextChanged);
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnSearch.Location = new System.Drawing.Point(354, 0);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
-            this.btnSearch.TabIndex = 2;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnAdd.Location = new System.Drawing.Point(429, 0);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnAdd.TabIndex = 3;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // pnlProfessorsGrid
             // 
             this.pnlProfessorsGrid.Controls.Add(this.dgvProfessors);
             this.pnlProfessorsGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlProfessorsGrid.Location = new System.Drawing.Point(0, 23);
+            this.pnlProfessorsGrid.Location = new System.Drawing.Point(0, 19);
+            this.pnlProfessorsGrid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlProfessorsGrid.Name = "pnlProfessorsGrid";
-            this.pnlProfessorsGrid.Size = new System.Drawing.Size(970, 488);
+            this.pnlProfessorsGrid.Size = new System.Drawing.Size(728, 396);
             this.pnlProfessorsGrid.TabIndex = 1;
             // 
             // dgvProfessors
@@ -124,10 +130,11 @@
             this.colDelete});
             this.dgvProfessors.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvProfessors.Location = new System.Drawing.Point(0, 0);
+            this.dgvProfessors.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvProfessors.Name = "dgvProfessors";
             this.dgvProfessors.ReadOnly = true;
             this.dgvProfessors.RowTemplate.Height = 24;
-            this.dgvProfessors.Size = new System.Drawing.Size(970, 488);
+            this.dgvProfessors.Size = new System.Drawing.Size(728, 396);
             this.dgvProfessors.TabIndex = 0;
             this.dgvProfessors.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProfessors_CellClick);
             // 
@@ -179,13 +186,14 @@
             // 
             // ProfessorSearchUserControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Controls.Add(this.pnlProfessorsGrid);
             this.Controls.Add(this.pnlProfessorsSearch);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ProfessorSearchUserControl";
-            this.Size = new System.Drawing.Size(970, 511);
+            this.Size = new System.Drawing.Size(728, 415);
             this.pnlProfessorsSearch.ResumeLayout(false);
             this.pnlProfessorsSearch.PerformLayout();
             this.pnlProfessorsGrid.ResumeLayout(false);

@@ -11,5 +11,8 @@ namespace School.DataAccess.Interfaces
     {
         DataTable GetProfessors();
         DataTable GetProfessorByLastName(string LastName);
+        bool AddProfessor(string ProfFirstName, string ProfLastName, string ProfMiddleName, int DepartmentID);
+        bool UpdateProfessor(int ID, string ProfFirstName, string ProfLastName, string ProfMiddleName,int DepartmentID);
+        bool DeleteProfessor(int ID);
     }
 }

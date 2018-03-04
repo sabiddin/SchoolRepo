@@ -11,5 +11,9 @@ namespace School.WinForm.ViewModels.Interfaces
     {
         List<Professor> GetProfessors();
         List<Professor> GetProfessorsByLastName(string LastName);
+        List<Department> GetDepartments();
+        bool AddProfessor(Professor professor);
+        bool UpdateProfessor(Professor professor);
+        bool DeleteProfessor(int ID);
     }
 }

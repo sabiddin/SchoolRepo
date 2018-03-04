@@ -60,6 +60,10 @@ namespace School.WinForm.Views.UserControls
                         LoadData();
                     break;
                 case 6:
+                    ProfessorDelete deleteview = new ProfessorDelete(_professorViewModel, professor);
+                    deleteview.ShowDialog();
+                    if (deleteview.Success)
+                        LoadData();
                     break;
                 default:
                     break;

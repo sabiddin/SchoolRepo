@@ -149,6 +149,12 @@
     <Compile Include="Views\UserControls\ProfessorSearchUserControl.Designer.cs">
       <DependentUpon>ProfessorSearchUserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\UserControls\ProfessorUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UserControls\ProfessorUserControl.Designer.cs">
+      <DependentUpon>ProfessorUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserControls\StudentSearchUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -176,6 +182,15 @@
     <EmbeddedResource Include="Views\Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProfessorViews\ProfessorCreate.resx">
+      <DependentUpon>ProfessorCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProfessorViews\ProfessorDelete.resx">
+      <DependentUpon>ProfessorDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProfessorViews\ProfessorUpdate.resx">
+      <DependentUpon>ProfessorUpdate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\UserControls\CourseSearchUserControl.resx">
       <DependentUpon>CourseSearchUserControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -187,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UserControls\ProfessorSearchUserControl.resx">
       <DependentUpon>ProfessorSearchUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserControls\ProfessorUserControl.resx">
+      <DependentUpon>ProfessorUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UserControls\StudentSearchUserControl.resx">
       <DependentUpon>StudentSearchUserControl.cs</DependentUpon>

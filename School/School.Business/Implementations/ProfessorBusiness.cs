@@ -59,5 +59,17 @@ namespace School.Business.Implementations
             }
             return professors;
         }
+        public bool AddProfessor(Professor professor)
+        {
+            return _professorDataAccess.AddProfessor(professor.ProfFirstName, professor.ProfLastName, professor.ProfMiddleName, professor.Department.ID);
+        }
+        public bool UpdateProfessor(Professor professor)
+        {
+            return _professorDataAccess.UpdateProfessor(professor.ID, professor.ProfFirstName, professor.ProfLastName, professor.ProfMiddleName, professor.Department.ID);
+        }
+        public bool DeleteProfessor(int ID)
+        {
+            return _professorDataAccess.DeleteProfessor(ID);
+        }
     }
 }

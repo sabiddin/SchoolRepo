@@ -12,9 +12,11 @@ namespace School.WinForm.ViewModels.Implementations
     public class ProfessorViewModel : IProfessorViewModel
     {
         private IProfessorBusinesss _professorBusinesss;
-        public ProfessorViewModel(IProfessorBusinesss professorBusinesss)
+        private IDepartmentBusiness _departmentBusiness;
+        public ProfessorViewModel(IProfessorBusinesss professorBusinesss, IDepartmentBusiness departmentBusiness)
         {
             _professorBusinesss = professorBusinesss;
+            _departmentBusiness = departmentBusiness;
         }
         public List<Professor> GetProfessors()
         {
@@ -24,6 +26,22 @@ namespace School.WinForm.ViewModels.Implementations
         public List<Professor> GetProfessorsByLastName(string LastName)
         {
             return _professorBusinesss.GetProfessorsByLastName(LastName);
+        }
+        public bool AddProfessor(Professor professor)
+        {
+            return _professorBusinesss.AddProfessor(professor);
+        }
+        public List<Department> GetDepartments()
+        {
+            return _departmentBusiness.GetDepartments();
+        }
+        public bool UpdateProfessor(Professor professor)
+        {
+            return _professorBusinesss.UpdateProfessor(professor);
+        }
+        public bool DeleteProfessor(int ID)
+        {
+            return _professorBusinesss.DeleteProfessor(ID);
         }
     }
 }

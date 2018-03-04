@@ -48,19 +48,21 @@
             // 
             this.lblID.AutoSize = true;
             this.lblID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblID.Location = new System.Drawing.Point(3, 0);
+            this.lblID.Location = new System.Drawing.Point(2, 0);
+            this.lblID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(131, 25);
+            this.lblID.Size = new System.Drawing.Size(98, 20);
             this.lblID.TabIndex = 0;
             this.lblID.Text = "ID";
             // 
             // txtID
             // 
             this.txtID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtID.Location = new System.Drawing.Point(140, 3);
+            this.txtID.Location = new System.Drawing.Point(104, 2);
+            this.txtID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtID.Name = "txtID";
             this.txtID.ReadOnly = true;
-            this.txtID.Size = new System.Drawing.Size(190, 22);
+            this.txtID.Size = new System.Drawing.Size(144, 20);
             this.txtID.TabIndex = 1;
             // 
             // tblCoursePanel
@@ -83,6 +85,7 @@
             this.tblCoursePanel.Controls.Add(this.cboDepartment, 1, 1);
             this.tblCoursePanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblCoursePanel.Location = new System.Drawing.Point(0, 0);
+            this.tblCoursePanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tblCoursePanel.Name = "tblCoursePanel";
             this.tblCoursePanel.RowCount = 6;
             this.tblCoursePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
@@ -91,70 +94,77 @@
             this.tblCoursePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tblCoursePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tblCoursePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tblCoursePanel.Size = new System.Drawing.Size(333, 153);
+            this.tblCoursePanel.Size = new System.Drawing.Size(250, 124);
             this.tblCoursePanel.TabIndex = 2;
             // 
             // lblCourseNumber
             // 
             this.lblCourseNumber.AutoSize = true;
             this.lblCourseNumber.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCourseNumber.Location = new System.Drawing.Point(3, 50);
+            this.lblCourseNumber.Location = new System.Drawing.Point(2, 40);
+            this.lblCourseNumber.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCourseNumber.Name = "lblCourseNumber";
-            this.lblCourseNumber.Size = new System.Drawing.Size(131, 25);
+            this.lblCourseNumber.Size = new System.Drawing.Size(98, 20);
             this.lblCourseNumber.TabIndex = 2;
             this.lblCourseNumber.Text = "Course Number";
             // 
             // txtCourseNumber
             // 
             this.txtCourseNumber.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtCourseNumber.Location = new System.Drawing.Point(140, 53);
+            this.txtCourseNumber.Location = new System.Drawing.Point(104, 42);
+            this.txtCourseNumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCourseNumber.Name = "txtCourseNumber";
-            this.txtCourseNumber.Size = new System.Drawing.Size(190, 22);
+            this.txtCourseNumber.Size = new System.Drawing.Size(144, 20);
             this.txtCourseNumber.TabIndex = 3;
             // 
             // lblCourseName
             // 
             this.lblCourseName.AutoSize = true;
             this.lblCourseName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCourseName.Location = new System.Drawing.Point(3, 75);
+            this.lblCourseName.Location = new System.Drawing.Point(2, 60);
+            this.lblCourseName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCourseName.Name = "lblCourseName";
-            this.lblCourseName.Size = new System.Drawing.Size(131, 25);
+            this.lblCourseName.Size = new System.Drawing.Size(98, 20);
             this.lblCourseName.TabIndex = 4;
             this.lblCourseName.Text = "Course Name";
             // 
             // txtCourseName
             // 
             this.txtCourseName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtCourseName.Location = new System.Drawing.Point(140, 78);
+            this.txtCourseName.Location = new System.Drawing.Point(104, 62);
+            this.txtCourseName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCourseName.Name = "txtCourseName";
-            this.txtCourseName.Size = new System.Drawing.Size(190, 22);
+            this.txtCourseName.Size = new System.Drawing.Size(144, 20);
             this.txtCourseName.TabIndex = 5;
             // 
             // lblCourseDescription
             // 
             this.lblCourseDescription.AutoSize = true;
             this.lblCourseDescription.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCourseDescription.Location = new System.Drawing.Point(3, 100);
+            this.lblCourseDescription.Location = new System.Drawing.Point(2, 80);
+            this.lblCourseDescription.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCourseDescription.Name = "lblCourseDescription";
-            this.lblCourseDescription.Size = new System.Drawing.Size(131, 25);
+            this.lblCourseDescription.Size = new System.Drawing.Size(98, 20);
             this.lblCourseDescription.TabIndex = 6;
             this.lblCourseDescription.Text = "Course Description";
             // 
             // txtCourseDescription
             // 
             this.txtCourseDescription.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtCourseDescription.Location = new System.Drawing.Point(140, 103);
+            this.txtCourseDescription.Location = new System.Drawing.Point(104, 82);
+            this.txtCourseDescription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCourseDescription.Name = "txtCourseDescription";
-            this.txtCourseDescription.Size = new System.Drawing.Size(190, 22);
+            this.txtCourseDescription.Size = new System.Drawing.Size(144, 20);
             this.txtCourseDescription.TabIndex = 7;
             // 
             // lblCredits
             // 
             this.lblCredits.AutoSize = true;
             this.lblCredits.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCredits.Location = new System.Drawing.Point(3, 125);
+            this.lblCredits.Location = new System.Drawing.Point(2, 100);
+            this.lblCredits.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCredits.Name = "lblCredits";
-            this.lblCredits.Size = new System.Drawing.Size(131, 28);
+            this.lblCredits.Size = new System.Drawing.Size(98, 24);
             this.lblCredits.TabIndex = 8;
             this.lblCredits.Text = "Credits";
             // 
@@ -171,18 +181,20 @@
             "4",
             "5",
             "6"});
-            this.cboCredits.Location = new System.Drawing.Point(140, 128);
+            this.cboCredits.Location = new System.Drawing.Point(104, 102);
+            this.cboCredits.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboCredits.Name = "cboCredits";
-            this.cboCredits.Size = new System.Drawing.Size(190, 24);
+            this.cboCredits.Size = new System.Drawing.Size(144, 21);
             this.cboCredits.TabIndex = 9;
             // 
             // lblDepartment
             // 
             this.lblDepartment.AutoSize = true;
             this.lblDepartment.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDepartment.Location = new System.Drawing.Point(3, 25);
+            this.lblDepartment.Location = new System.Drawing.Point(2, 20);
+            this.lblDepartment.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDepartment.Name = "lblDepartment";
-            this.lblDepartment.Size = new System.Drawing.Size(131, 25);
+            this.lblDepartment.Size = new System.Drawing.Size(98, 20);
             this.lblDepartment.TabIndex = 10;
             this.lblDepartment.Text = "Department";
             // 
@@ -190,19 +202,21 @@
             // 
             this.cboDepartment.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cboDepartment.FormattingEnabled = true;
-            this.cboDepartment.Location = new System.Drawing.Point(140, 28);
+            this.cboDepartment.Location = new System.Drawing.Point(104, 22);
+            this.cboDepartment.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboDepartment.Name = "cboDepartment";
-            this.cboDepartment.Size = new System.Drawing.Size(190, 24);
+            this.cboDepartment.Size = new System.Drawing.Size(144, 21);
             this.cboDepartment.TabIndex = 11;
             this.cboDepartment.SelectedIndexChanged += new System.EventHandler(this.cboDepartment_SelectedIndexChanged);
             // 
             // CourseUserControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tblCoursePanel);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CourseUserControl";
-            this.Size = new System.Drawing.Size(333, 153);
+            this.Size = new System.Drawing.Size(250, 124);
             this.tblCoursePanel.ResumeLayout(false);
             this.tblCoursePanel.PerformLayout();
             this.ResumeLayout(false);

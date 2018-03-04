@@ -11,5 +11,8 @@ namespace School.Business.Interfaces
     {
         List<Professor> GetProfessors();
         List<Professor> GetProfessorsByLastName(string LastName);
+        bool AddProfessor(Professor professor);
+        bool UpdateProfessor(Professor professor);
+        bool DeleteProfessor(int ID);
     }
 }

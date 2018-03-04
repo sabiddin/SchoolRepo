@@ -69,5 +69,111 @@ namespace School.DataAccess.Implementations
             }
             return dataTable;
         }
+        public bool AddProfessor(string ProfFirstName, string ProfLastName, string ProfMiddleName, int DepartmentID)
+        {
+            bool success = false;
+            string sp = "sp_tblProfessor_Insert";
+            using (SqlConnection connection = new SqlConnection(SchoolConnetion))
+            using (SqlCommand command = new SqlCommand(sp, connection))
+            {
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@ProfFirstName", ProfFirstName);
+                command.Parameters.AddWithValue("@ProfLastName", ProfLastName);
+                command.Parameters.AddWithValue("@ProfMiddleName", ProfMiddleName);
+                command.Parameters.AddWithValue("@DepartmentID", DepartmentID);
+                try
+                {
+                    connection.Open();
+                    object o = command.ExecuteNonQuery();
+                    if(o!=null)
+                    {
+                        success = true;
+                    }
+                }
+                catch (SqlException sex)
+                {
+                    throw sex;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    connection.Close();
+                }
+                return success;
+            }
+        }
+        public bool UpdateProfessor(int ID, string ProfFirstName, string ProfLastName, string ProfMiddleName, int DepartmentID)
+        {
+            bool success = false;
+            string sp = "sp_tblProfessor_Update";
+            using (SqlConnection connection = new SqlConnection(SchoolConnetion))
+            using (SqlCommand command = new SqlCommand(sp, connection))
+            {
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("ID", ID);
+                command.Parameters.AddWithValue("@ProfFirstName", ProfFirstName);
+                command.Parameters.AddWithValue("@ProfLastName", ProfLastName);
+                command.Parameters.AddWithValue("@ProfMiddleName", ProfMiddleName);
+                command.Parameters.AddWithValue("@DepartmentID", DepartmentID);
+                try
+                {
+                    connection.Open();
+                    object o = command.ExecuteNonQuery();
+                    if (o != null)
+                    {
+                        success = true;
+                    }
+                }
+                catch (SqlException sex)
+                {
+                    throw sex;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    connection.Close();
+                }
+                return success;
+            }
+        }
+        public bool DeleteProfessor(int ID)
+        {
+            bool success = false;
+            string sp = "sp_tblProfessor_Delete";
+            using (SqlConnection connection = new SqlConnection(SchoolConnetion))
+            using (SqlCommand command = new SqlCommand(sp, connection))
+            {
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@ID", ID);
+                try
+                {
+                    connection.Open();
+                    object o = command.ExecuteNonQuery();
+                    if (o != null)
+                    {
+                        success = true;
+                    }
+                }
+                catch (SqlException sex)
+                {
+                    throw sex;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    connection.Close();
+                }
+                return success;
+            }
+        }
     }
 }
