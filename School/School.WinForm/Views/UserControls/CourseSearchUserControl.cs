@@ -32,7 +32,7 @@ namespace School.WinForm.Views.UserControls
             {
                 dgvCourses.Rows.Add(course.ID, course.CourseNumber,
                     course.CourseName, course.CourseDescription,
-                    course.Credits, course.Department.DepartmentDescription, "Edit", "Delete");
+                    course.Department.DepartmentDescription, course.Credits, "Edit", "Delete");
             }
         }
 
@@ -54,16 +54,16 @@ namespace School.WinForm.Views.UserControls
             course.CourseNumber = row.Cells["colCourseNumber"].Value.ToString();
             course.CourseName = row.Cells["colCourseName"].Value.ToString();
             course.CourseDescription = row.Cells["colCourseDescription"].Value.ToString();
-            course.Credits = Convert.ToInt32(row.Cells["colID"].Value.ToString());
+            course.Credits = Convert.ToInt32(row.Cells["colCredits"].Value.ToString());
             switch (columnIndex)
             {
-                case 5:
+                case 6:
                     CourseUpdate updateView = new CourseUpdate(_courseViewModel, course);
                     updateView.ShowDialog();
                     if (updateView.Success)
                         LoadData();
                     break;
-                case 6:
+                case 7:
                     break;
                 default:
                     break;

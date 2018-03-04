@@ -16,6 +16,7 @@ namespace School.WinForm.Views.StudentViews
     {
         private IStudentViewModel _studentViewModel;
         private Student _student;
+        private List<Department> _departments = new List<Department>();
         public bool Success { get; set; }
 
         public StudentDelete()
@@ -36,6 +37,18 @@ namespace School.WinForm.Views.StudentViews
             ucStudent.txtStudMiddleName.ReadOnly = true;
             ucStudent.cboDepartment.Text = _student.Department.ToString();
             ucStudent.cboDepartment.Enabled = false;
+
+            _departments = _studentViewModel.GetDepartments();
+            _departments.Insert(0, new Department()
+            {
+                ID = 0,
+                DepartmentCode = "",
+                DepartmentDescription = "Please Select"
+            });
+            ucStudent.cboDepartment.DataSource = _departments;
+            ucStudent.cboDepartment.DisplayMember = "DepartmentDescription";
+            ucStudent.cboDepartment.ValueMember = "DepartmentCode";
+            ucStudent.cboDepartment.Text = student.Department.DepartmentDescription;
         }
 
         

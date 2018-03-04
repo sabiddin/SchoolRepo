@@ -56,18 +56,18 @@
             this.pnlSearch.Controls.Add(this.lblCourseName);
             this.pnlSearch.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlSearch.Location = new System.Drawing.Point(0, 0);
-            this.pnlSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlSearch.Name = "pnlSearch";
-            this.pnlSearch.Size = new System.Drawing.Size(728, 19);
+            this.pnlSearch.Size = new System.Drawing.Size(971, 23);
             this.pnlSearch.TabIndex = 0;
             // 
             // btnAdd
             // 
             this.btnAdd.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnAdd.Location = new System.Drawing.Point(325, 0);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdd.Location = new System.Drawing.Point(432, 0);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(56, 19);
+            this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 3;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -76,10 +76,10 @@
             // btnSearch
             // 
             this.btnSearch.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnSearch.Location = new System.Drawing.Point(269, 0);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSearch.Location = new System.Drawing.Point(357, 0);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(56, 19);
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
             this.btnSearch.TabIndex = 2;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -88,10 +88,10 @@
             // txtCourseName
             // 
             this.txtCourseName.Dock = System.Windows.Forms.DockStyle.Left;
-            this.txtCourseName.Location = new System.Drawing.Point(71, 0);
-            this.txtCourseName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCourseName.Location = new System.Drawing.Point(94, 0);
+            this.txtCourseName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCourseName.Name = "txtCourseName";
-            this.txtCourseName.Size = new System.Drawing.Size(198, 20);
+            this.txtCourseName.Size = new System.Drawing.Size(263, 22);
             this.txtCourseName.TabIndex = 1;
             this.txtCourseName.TextChanged += new System.EventHandler(this.txtCourseName_TextChanged);
             // 
@@ -100,9 +100,8 @@
             this.lblCourseName.AutoSize = true;
             this.lblCourseName.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblCourseName.Location = new System.Drawing.Point(0, 0);
-            this.lblCourseName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCourseName.Name = "lblCourseName";
-            this.lblCourseName.Size = new System.Drawing.Size(71, 13);
+            this.lblCourseName.Size = new System.Drawing.Size(94, 17);
             this.lblCourseName.TabIndex = 0;
             this.lblCourseName.Text = "Course Name";
             // 
@@ -110,10 +109,10 @@
             // 
             this.pnlCourseGrid.Controls.Add(this.dgvCourses);
             this.pnlCourseGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlCourseGrid.Location = new System.Drawing.Point(0, 19);
-            this.pnlCourseGrid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlCourseGrid.Location = new System.Drawing.Point(0, 23);
+            this.pnlCourseGrid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlCourseGrid.Name = "pnlCourseGrid";
-            this.pnlCourseGrid.Size = new System.Drawing.Size(728, 396);
+            this.pnlCourseGrid.Size = new System.Drawing.Size(971, 488);
             this.pnlCourseGrid.TabIndex = 1;
             // 
             // dgvCourses
@@ -132,11 +131,11 @@
             this.colDelete});
             this.dgvCourses.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvCourses.Location = new System.Drawing.Point(0, 0);
-            this.dgvCourses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvCourses.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvCourses.Name = "dgvCourses";
             this.dgvCourses.ReadOnly = true;
             this.dgvCourses.RowTemplate.Height = 24;
-            this.dgvCourses.Size = new System.Drawing.Size(728, 396);
+            this.dgvCourses.Size = new System.Drawing.Size(971, 488);
             this.dgvCourses.TabIndex = 0;
             this.dgvCourses.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCourses_CellClick);
             // 
@@ -194,14 +193,14 @@
             // 
             // CourseSearchUserControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Controls.Add(this.pnlCourseGrid);
             this.Controls.Add(this.pnlSearch);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "CourseSearchUserControl";
-            this.Size = new System.Drawing.Size(728, 415);
+            this.Size = new System.Drawing.Size(971, 511);
             this.pnlSearch.ResumeLayout(false);
             this.pnlSearch.PerformLayout();
             this.pnlCourseGrid.ResumeLayout(false);

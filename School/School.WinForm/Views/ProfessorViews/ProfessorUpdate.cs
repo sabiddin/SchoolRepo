@@ -22,8 +22,7 @@ namespace School.WinForm.Views.ProfessorViews
         {
             InitializeComponent();
             _professorViewModel = professorViewModel;
-            professorToBeUpdated = professor;
-            InitializeProfessorUserControl();
+            professorToBeUpdated = professor;            
             _departments = _professorViewModel.GetDepartments();
             _departments.Insert(0, new Department()
             {
@@ -31,10 +30,10 @@ namespace School.WinForm.Views.ProfessorViews
                 DepartmentCode = "",
                 DepartmentDescription = "Please Select"
             });
-
             ucProfessor.cboDepartment.DataSource = _departments;
             ucProfessor.cboDepartment.DisplayMember = "DepartmentDescription";
             ucProfessor.cboDepartment.ValueMember = "DepartmentCode";
+            InitializeProfessorUserControl();
         }
         private void InitializeProfessorUserControl()
         {

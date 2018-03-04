@@ -28,8 +28,7 @@ namespace School.WinForm.Views.StudentViews
         {
             _studentViewModel = studentViewModel;
             _studentToBeUpdated = student;
-            InitializeComponent();
-            InitializeStudentUserControl();
+            InitializeComponent();            
             _departments = _studentViewModel.GetDepartments();
             _departments.Insert(0, new Department()
             {
@@ -40,6 +39,7 @@ namespace School.WinForm.Views.StudentViews
             ucStudent.cboDepartment.DataSource = _departments;
             ucStudent.cboDepartment.DisplayMember = "DepartmentDescription";
             ucStudent.cboDepartment.ValueMember = "DepartmentCode";
+            InitializeStudentUserControl();
 
         }
 
