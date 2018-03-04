@@ -13,7 +13,9 @@ namespace School.Business.Implementations
 {
     public class StudentBusiness : IStudentBusiness
     {
+
         private IStudentDataAccess _studentDataAccess;
+        
         public StudentBusiness(IStudentDataAccess studentDataAccess)
         {
             _studentDataAccess = studentDataAccess;
@@ -58,6 +60,20 @@ namespace School.Business.Implementations
 
             }
             return students;
+        }
+        public bool AddStudent(Student student)
+        {
+            return _studentDataAccess.AddStudent(student.StudFirstName, student.StudLastName, 
+                student.StudMiddleName, student.Department.ID);
+        }
+        public bool UpdateStudent(Student student)
+        {
+            return _studentDataAccess.UpdateStudent(student.ID, student.StudFirstName, 
+                student.StudLastName, student.StudMiddleName, student.Department.ID);
+        }
+        public bool DeleteStudent(int ID)
+        {
+            return _studentDataAccess.DeleteStudent(ID);
         }
     }
 }

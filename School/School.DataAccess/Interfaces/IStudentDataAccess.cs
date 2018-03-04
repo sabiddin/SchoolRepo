@@ -11,5 +11,8 @@ namespace School.DataAccess.Interfaces
     {
         DataTable GetSudents();
         DataTable GetStudentByLastName(string LastName);
+        bool AddStudent(string StudFirstName, string StudLastName, string StudMiddleName, int DepartmentID);
+        bool UpdateStudent(int ID, string StudFirstName, string StudLastName, string StudMiddleName, int DepartmentID);
+        bool DeleteStudent(int ID);
     }
 }
